@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# https://unix.stackexchange.com/questions/108873/removing-a-directory-from-path
+
+echo ":$PATH:" | sed "s@:$1:@:@g;s@^:\(.*\):\$@\1@"
+ 

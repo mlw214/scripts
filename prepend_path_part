@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# https://unix.stackexchange.com/questions/108873/removing-a-directory-from-path
+
+if echo ":$PATH:" | grep -q ":$1:"; then echo "$PATH"; else echo "$1:$PATH"; fi
+

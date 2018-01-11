@@ -1,0 +1,4 @@
+#!/bin/sh
+
+export PATH=$(remove_path_part $HOME/anaconda3/bin)
+
